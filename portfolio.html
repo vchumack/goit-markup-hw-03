@@ -21,23 +21,24 @@
   <body>
     <!--  Шапка: логотип, менюшка с навигацией и контакты -->
     <header class="page-header">
-      <div class="container">
+      <div class="main-nav container">
         <a href="./index.html" class="logo">Web<span class="logo-header">Studio</span></a>
         <nav>
           <ul class="site-nav list">
-            <li><a href="./index.html" class="link">Студия</a></li>
-            <li><a href="./portfolio.html" class="link current">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="nav-item"><a href="./index.html" class="link">Студия</a></li>
+            <li class="nav-item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
+            <li class="nav-item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
+
         <ul class="contacts list">
-          <li>
+          <li class="contacts-item">
             <a lang="en" href="mailto:info@devstudio.com" class="header-contacts"
               >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a lang="en" href="tel:+14251234563" class="header-contacts">+38 096 111 11 113</a>
+          <li class="contacts-item">
+            <a lang="en" href="tel:+14251234563" class="header-contacts">+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -49,15 +50,23 @@
         <div class="container">
           <h1 class="section-title">Наши проекты</h1>
           <ul class="list filter">
-            <li><button type="button" class="projects-btn">Все</button></li>
-            <li><button type="button" class="projects-btn">Веб-сайты</button></li>
-            <li><button type="button" class="projects-btn">Приложения</button></li>
-            <li><button type="button" class="projects-btn">Дизайн</button></li>
-            <li><button type="button" class="projects-btn">Маркетинг</button></li>
+            <li class="filter-element"><button type="button" class="projects-btn">Все</button></li>
+            <li class="filter-element">
+              <button type="button" class="projects-btn">Веб-сайты</button>
+            </li>
+            <li class="filter-element">
+              <button type="button" class="projects-btn">Приложения</button>
+            </li>
+            <li class="filter-element">
+              <button type="button" class="projects-btn">Дизайн</button>
+            </li>
+            <li class="filter-element">
+              <button type="button" class="projects-btn">Маркетинг</button>
+            </li>
           </ul>
 
           <ul class="projects-list list">
-            <li>
+            <li class="projects-element">
               <a href="" class="projects-link"
                 ><img
                   src="./images/portfolio1.jpg"
@@ -68,7 +77,7 @@
                 <p class="projects-text">Веб-сайт</p></a
               >
             </li>
-            <li>
+            <li class="projects-element">
               <a href="" class="projects-link"
                 ><img
                   src="./images/portfolio2.jpg"
@@ -79,7 +88,7 @@
                 <p class="projects-text">Дизайн</p></a
               >
             </li>
-            <li>
+            <li class="projects-element">
               <a href="" class="projects-link"
                 ><img
                   src="./images/portfolio3.jpg"
@@ -90,14 +99,14 @@
                 <p class="projects-text">Приложение</p></a
               >
             </li>
-            <li>
+            <li class="projects-element">
               <a href="" class="projects-link"
                 ><img src="./images/portfolio4.jpg" alt="Наушники" width="370" />
                 <h2 lang="en" class="projects-title">Проект Prime</h2>
                 <p class="projects-text">Маркетинг</p></a
               >
             </li>
-            <li>
+            <li class="projects-element">
               <a href="" class="projects-link"
                 ><img
                   src="./images/portfolio5.jpg"
@@ -108,7 +117,7 @@
                 <p class="projects-text">Приложение</p></a
               >
             </li>
-            <li>
+            <li class="projects-element">
               <a href="" class="projects-link"
                 ><img
                   src="./images/portfolio6.jpg"
@@ -119,14 +128,14 @@
                 <p class="projects-text">Веб-сайт</p></a
               >
             </li>
-            <li>
+            <li class="projects-element">
               <a href="" class="projects-link"
                 ><img src="./images/portfolio7.jpg" alt="Раскрытый журнал" width="370" />
                 <h2 lang="en" class="projects-title">Издание Limited Edition</h2>
                 <p class="projects-text">Дизайн</p></a
               >
             </li>
-            <li>
+            <li class="projects-element">
               <a href="" class="projects-link"
                 ><img
                   src="./images/portfolio8.jpg"
@@ -137,7 +146,7 @@
                 <p class="projects-text">Маркетинг</p></a
               >
             </li>
-            <li>
+            <li class="projects-element">
               <a href="" class="projects-link"
                 ><img
                   src="./images/portfolio9.jpg"
