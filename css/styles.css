@@ -21,10 +21,13 @@
    --footer-background-color: #2F303A;
    --accent-color: #2196F3;
    --secondary-link-color: rgba(255, 255, 255, 0.6);
+   --border-color: #ECECEC;
+   --secondary-border-color: #EEEEEE;
+
 
 }
 
-/*---------------- Общая стилизация ----------------*/
+/* ------------------------------- Общая стилизация ------------------------------- */
 body {
    background-color: var(--white-background-color);
    color: var(--main-text-color);
@@ -58,34 +61,42 @@ body {
 }
 
 
-/*---------------- Стилизация логотипа ---------------- */
-.logo {
-   color: var(--accent-color);
+/* ------------------------------- Стилизация хедера ------------------------------- */
 
-   text-decoration: none;
-   font-family: Raleway, sans-serif;
-   font-weight: 700;
-   font-size: 26px;
-   line-height: 1.19;
+.header-page {
+   border-bottom: 1px solid var(--border-color);
 }
 
-.logo-header {
-   color: var(--logo-color);
+.nav-container {
+   display: flex;
+   align-items: center;
+}
 
+/*---------------- Стилизация логотипа ---------------- */
+.logo-accent {
    text-decoration: none;
    font-family: Raleway, sans-serif;
    font-weight: 700;
    font-size: 26px;
    line-height: 1.19;
+
+   color: var(--accent-color);
+}
+
+.logo-black {
+   text-decoration: none;
+   font-family: Raleway, sans-serif;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.19;
+
+   color: var(--logo-color);
 }
 
 
 
 /*---------------- Стилизация менюшки/навигации ----------------*/
-.main-nav {
-   display: flex;
-   align-items: center;
-}
+
 
 .site-nav {
    display: flex;
@@ -284,6 +295,12 @@ body {
    display: flex;
 }
 
+.team-element {
+   background-color: var(--white-background-color);
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 0px 0px 4px 4px;
+}
+
 .team-element:not(:last-child) {
    margin-right: 30px;
 }
@@ -297,16 +314,19 @@ body {
    font-weight: 500;
    font-size: 16px;
    line-height: 1.18;
+   text-align: center;
 }
 
 .team-text {
    margin-top: 0;
-   margin-bottom: 0;
+   margin-bottom: 30px;
 
    color: var(--main-text-color);
 
    font-size: 16px;
    line-height: 1.18;
+   text-align: center;
+
 }
 
 
@@ -315,11 +335,14 @@ body {
 /*---------------- Стилизация футера ----------------*/
 .footer-page {
    background-color: var(--footer-background-color);
+   padding-top: 60px;
+   padding-bottom: 60px;
 }
 
-.footer-logo {
+.logo-white {
    display: inline-block;
    margin-bottom: 20px;
+   /* padding-top: 60px; */
 
    color: var(--white-text-color);
 
@@ -376,7 +399,7 @@ body {
    margin-right: 30px;
    margin-bottom: 30px;
 
-   outline: rgb(83, 246, 83) solid 2px;
+   /* outline: rgb(83, 246, 83) solid 2px; */
 }
 
 .projects-element:nth-child(3n) {
@@ -398,7 +421,7 @@ body {
    color: var(--secondary-text-color);
    background-color: var(--secondary-background-color);
    border-radius: 4px;
-   border: 1px solid transparent;
+   border: 0;
 
    font-family: 'Roboto', sans-serif;
    font-weight: 500;
@@ -421,28 +444,48 @@ body {
    margin-right: 8px;
 }
 
+.projects-img {
+   display: block;
+}
+.projects-description {
+
+   border-left: 1px solid var(--secondary-border-color);
+   border-right: 1px solid var(--secondary-border-color);
+   border-bottom: 1px solid var(--secondary-border-color);;
+}
+
 .projects-title {
-   margin-top: 20px;
+   margin-top: 0;
    margin-bottom: 4px;
+   padding-left: 24px;
+   padding-top: 20px;
+   
 
    color: var(--secondary-text-color);
    font-size: 18px;
    line-height: 2;
    letter-spacing: 0.06em;
+   text-align: left;
 }
 
 .projects-text {
    margin-top: 0;
    margin-bottom: 0;
+   margin-left: 0;
+   padding-left: 24px;
+   padding-bottom: 20px;
 
    color: var(--main-text-color);
 
    font-size: 16px;
    line-height: 1.88;
+   text-align: left;
 }
 
 .projects-link {
+   display: inline-block;
    text-decoration: none;
+
 }
 
 .filter {
