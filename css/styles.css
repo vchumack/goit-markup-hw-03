@@ -113,9 +113,9 @@ body {
    margin-left: 93px;
 }
 
-.site-nav__item {
-   /* outline: 1px solid #ff3388; */
-}
+/* .site-nav__item {
+   outline: 1px solid #ff3388; 
+} */
 
 .site-nav__item:not(:last-child) {
    margin-right: 50px;
@@ -158,9 +158,9 @@ body {
    margin-right: 50px;
 }
 
-.contacts-list__item {
-   /* outline: 1px solid #ff3388; */
-}
+/* .contacts-list__item {
+   outline: 1px solid #ff3388; 
+} */
 
 .contacts-list__link {
    text-decoration: none;
