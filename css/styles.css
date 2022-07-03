@@ -180,6 +180,9 @@ body {
 
 /*---------------- Стилизация раздела Hero ----------------*/
 .hero {
+   padding-top: 200px;
+   padding-bottom: 200px;
+
    text-align: center;
    background-color: var(--footer-background-color);
 }
@@ -323,8 +326,13 @@ body {
    margin-right: 30px;
 }
 
+.team-list__description {
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
 .team-list__title {
-   margin-top: 30px;
+   margin-top: 0;
    margin-bottom: 10px;
 
    font-weight: 500;
@@ -337,7 +345,7 @@ body {
 
 .team-list__text {
    margin-top: 0;
-   margin-bottom: 30px;
+   margin-bottom: 0;
 
    font-size: 16px;
    line-height: 1.18;
@@ -417,7 +425,7 @@ body {
    justify-content: center;
 
    margin-top: 0;
-   margin-bottom: 34px;
+   margin-bottom: 50px;
 }
 
 .filter-list__item:not(:last-child) {
@@ -483,6 +491,8 @@ body {
 }
 
 .projects-list__description {
+   padding: 20px 24px 20px 24px;
+
    border-left: 1px solid var(--secondary-border-color);
    border-right: 1px solid var(--secondary-border-color);
    border-bottom: 1px solid var(--secondary-border-color);
@@ -491,8 +501,8 @@ body {
 .projects-list__title {
    margin-top: 0;
    margin-bottom: 4px;
-   padding-left: 24px;
-   padding-top: 20px;
+   /* padding-left: 24px;
+   padding-top: 20px; */
 
    font-size: 18px;
    line-height: 2;
@@ -506,8 +516,8 @@ body {
    margin-top: 0;
    margin-bottom: 0;
    margin-left: 0;
-   padding-left: 24px;
-   padding-bottom: 20px;
+   /* padding-left: 24px;
+   padding-bottom: 20px; */
 
    font-size: 16px;
    line-height: 1.88;
